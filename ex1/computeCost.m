@@ -13,9 +13,8 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
-predikcije = X * theta;
-kvadratnePogreske = (predikcije - y) .^2;
-J = 1 / (2 * m) * sum(kvadratnePogreske);
+pred = X * theta;
+J = (1 / (2 * m)) * sum((pred - y) .^2);
 
 
 
